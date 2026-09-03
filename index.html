@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advaith Santhosh — Game Designer & Developer">
+  <title>Advaith Santhosh — Game Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo"><span>AS</span><b>Advaith Santhosh</b></a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-button">Let's create ↗</a>
+    <button class="menu-button" id="menuButton">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-doodle doodle-arrow">GAME<br>DESIGN<br><span>↓</span></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow" id="heroEyebrow">GAME DESIGNER · DEVELOPER · CREATIVE</p>
+        <h1>I turn <em>ideas</em><br>into playable worlds.</h1>
+        <p class="hero-description" id="heroDescription">
+          Hi, I'm Advaith — a game design & development student who loves creating mechanics,
+          worlds, characters and experiences that make people want to play.
+        </p>
+        <div class="hero-buttons">
+          <a href="#work" class="btn btn-dark">Explore my work <span>↘</span></a>
+          <a href="#about" class="btn btn-light">About me</a>
+        </div>
+      </div>
+
+      <div class="hero-game-wrap reveal">
+        <div class="game-card">
+          <div class="game-top">
+            <span>✦ MINI PLAYGROUND</span>
+            <span id="score">000</span>
+          </div>
+          <div class="game-heading">
+            <strong id="gameTitle">SKETCH DODGER</strong>
+            <span id="lives">♥ ♥ ♥</span>
+          </div>
+          <canvas id="gameCanvas"></canvas>
+          <div class="game-bottom">
+            <span id="gameHint">MOVE WITH ← → / A D</span>
+            <button id="restartGame">RESTART ↻</button>
+          </div>
+        </div>
+        <p class="hand-note">a tiny game<br>inside my portfolio ✎</p>
+      </div>
+
+      <div class="scroll-note">SCROLL TO EXPLORE ↓</div>
+    </section>
+
+    <section id="work" class="section work-section">
+      <div class="section-title reveal">
+        <span class="section-no">01</span>
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Things I've built.</h2>
+        </div>
+        <span class="title-arrow">↘</span>
+      </div>
+      <div id="projects" class="projects"></div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-text reveal">
+        <span class="section-no">02</span>
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Designer first.<br><em>Player always.</em></h2>
+        <p id="aboutOne">I enjoy taking an idea from a rough sketch to a playable experience. I like thinking about game loops, player motivation, level flow, interaction, visual language and the small details that make a game feel alive.</p>
+        <p id="aboutTwo">Currently studying Game Design & Development, I am constantly experimenting, prototyping and learning.</p>
+      </div>
+      <div class="sketch-board reveal">
+        <div class="orbit"></div>
+        <div class="note">WHAT IF<br>WE TRIED<br>THIS?</div>
+        <div class="pencil">✎</div>
+        <div class="sketch-label">prototype → test → learn → repeat</div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-title reveal">
+        <span class="section-no">03</span>
+        <div>
+          <p class="eyebrow">MY TOOLBOX</p>
+          <h2>What I do.</h2>
+        </div>
+      </div>
+      <div id="skills" class="skills-list"></div>
+    </section>
+
+    <section class="section process-section">
+      <div class="section-title reveal">
+        <span class="section-no">04</span>
+        <div>
+          <p class="eyebrow">HOW I WORK</p>
+          <h2>Sketch → Play → Polish.</h2>
+        </div>
+      </div>
+      <div class="process">
+        <article class="process-card reveal"><span>01</span><h3>Sketch</h3><p>Ideas begin rough. Mechanics, player goals and worlds get drawn before they get built.</p></article>
+        <article class="process-card reveal"><span>02</span><h3>Prototype</h3><p>I make the smallest playable version and discover what actually feels fun.</p></article>
+        <article class="process-card reveal"><span>03</span><h3>Polish</h3><p>Feedback, iteration, visuals, sound and details turn a prototype into an experience.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-content reveal">
+        <p class="eyebrow">05 · SAY HELLO</p>
+        <h2>Have an idea?<br><em>Let's play with it.</em></h2>
+        <a id="email" class="email" href="#">your@email.com ↗</a>
+        <div id="socials" class="socials"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Advaith Santhosh</span>
+    <span>Designed like a sketch. Built like a game.</span>
+  </footer>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  </div>
+
+  <div class="modal" id="projectModal">
+    <div class="modal-bg"></div>
+    <div class="modal-box">
+      <button class="close-modal" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
